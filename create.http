@@ -1,0 +1,36 @@
+### Create index products with 3 shards and 1 replica
+PUT http://localhost:9200/products
+Content-Type: application/json
+
+{
+  "settings": {
+    "number_of_shards": 3,
+    "number_of_replicas": 1
+  }
+}
+
+### Create index orders with 3 shards and 1 replica
+PUT http://localhost:9200/orders
+Content-Type: application/json
+
+{
+  "settings": {
+    "number_of_shards": 3,
+    "number_of_replicas": 1
+  }
+}
+
+### Create index customers with 3 shards and 1 replica
+PUT http://localhost:9200/customers
+Content-Type: application/json
+
+{
+  "settings": {
+    "number_of_shards": 3,
+    "number_of_replicas": 1
+  }
+}
+
+
+### Get list of indices
+GET http://localhost:9200/_cat/indices?v
