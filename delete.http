@@ -1,0 +1,11 @@
+### Delete index products
+DELETE http://localhost:9200/products
+
+### Delete index orders
+DELETE http://localhost:9200/orders
+
+### Delete index customers
+DELETE http://localhost:9200/customers
+
+### Get list of indices
+GET http://localhost:9200/_cat/indices?v
