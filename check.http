@@ -1,0 +1,2 @@
+# Check elastic search connection
+GET http://localhost:9200
