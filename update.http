@@ -1,0 +1,9 @@
+### Update document on index products
+POST http://localhost:9200/products/_update/2
+Content-Type: application/json
+
+{
+    "doc": {
+        "price": 300
+    }
+}
