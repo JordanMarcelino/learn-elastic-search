@@ -1,0 +1,5 @@
+### Search documents from index products
+POST http://localhost:9200/products/_search?size=10&from=0&sort=price:desc,created_at:desc
+
+### Search documents from orders products
+POST http://localhost:9200/orders/_search?size=10&from=0&sort=products.price:asc,products.quantity:desc
