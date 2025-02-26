@@ -9,3 +9,13 @@ DELETE http://localhost:9200/customers
 
 ### Get list of indices
 GET http://localhost:9200/_cat/indices?v
+
+
+## Delete document from index products
+DELETE http://localhost:9200/products/_doc/1
+
+## Delete document from index orders
+DELETE http://localhost:9200/orders/_doc/1
+
+## Delete document from index customers
+DELETE http://localhost:9200/customers/_doc/1
