@@ -1,0 +1,21 @@
+### Create or replace document on index products
+POST http://localhost:9200/products/_doc/2
+Content-Type: application/json
+
+{
+    "name": "Product 2",
+    "price": 200,
+    "in_stock": true,
+    "created_at": "2020-01-01 12:00:00"
+}
+
+### Create or replace document on index products
+POST http://localhost:9200/products/_doc/3
+Content-Type: application/json
+
+{
+    "name": "Product 3",
+    "price": 500,
+    "in_stock": true,
+    "created_at": "2025-01-01 12:00:00"
+}
